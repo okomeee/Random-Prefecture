@@ -5,7 +5,7 @@
     </v-ons-toolbar>
 
     <div class="header" style="margin:1%;">
-      <img src="../assets/onsenui-logo.png" alt="vue-logo">
+      <img src="../assets/Vso59x2r_400x400.jpg" alt="logo">
     </div>
 
     <div style="text-align: center;margin:0;">
@@ -304,7 +304,7 @@ export default {
           '新郷村'
         ],
         [
-          
+
         ]
       ]
     }
