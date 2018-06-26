@@ -1933,7 +1933,7 @@ export default {
         if (this.isShow) {
           let num = this.getRandomIntInclusive(0, 46)
           document.getElementById('prefecture').innerHTML = this.prefectures[num]
-          document.getElementById('city').innerHTML = this.city[num][this.getRandomIntInclusive(0, this.city[num].length)]
+          document.getElementById('city').innerHTML = this.city[num][this.getRandomIntInclusive(0, this.city[num].length - 1)]
         }
       }, 50)
     },
