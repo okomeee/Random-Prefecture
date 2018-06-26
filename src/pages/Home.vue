@@ -16,7 +16,7 @@
       <button @click="start()" style="margin: 6px 10px;font-size:14px;">Start</button>
       <button @click="stop()" style="margin: 6px 10px;font-size:14px;">Stop</button>
     </div>
-    <div style="text-align: center;margin:10% 0;">
+    <div style="text-align: center;margin:5% 0;">
       <span id="prefecture" style="font-size:32px;"></span>
       <span id="city" style="font-size:32px;"></span>
       <p id="go" style="font-size:32px;"></p>
