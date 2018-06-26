@@ -17,7 +17,9 @@
       <button @click="stop()" style="margin: 6px 10px;font-size:14px;">Stop</button>
     </div>
     <div style="text-align: center;margin:10% 0;">
-      <p id="prefecture" style="font-size:32px;"></p>
+      <span id="prefecture" style="font-size:32px;"></span>
+      <span id="city" style="font-size:32px;"></span>
+      <p id="go" style="font-size:32px;"></p>
     </div>
 
   </v-ons-page>
@@ -1925,15 +1927,19 @@ export default {
       return Math.floor(Math.random() * (max - min + 1)) + min
     },
     start () {
+      document.getElementById('go').innerHTML = ''
       this.isShow = true
       setInterval(() => {
         if (this.isShow) {
-          document.getElementById('prefecture').innerHTML = this.prefectures[this.getRandomIntInclusive(0, 46)]
+          let num = this.getRandomIntInclusive(0, 46)
+          document.getElementById('prefecture').innerHTML = this.prefectures[num]
+          document.getElementById('city').innerHTML = this.city[num][this.getRandomIntInclusive(0, this.city[num].length)]
         }
       }, 50)
     },
     stop () {
       this.isShow = false
+      document.getElementById('go').innerHTML = 'に行ってらっしゃい！'
     }
   }
 }
