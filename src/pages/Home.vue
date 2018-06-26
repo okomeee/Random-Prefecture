@@ -13,8 +13,8 @@
       <p v-else>「Stop」ボタンを押してください</p>
     </div>
     <div style="text-align: center;margin: 3% 0;">
-      <button @click="start()" style="margin: 6px 10px;font-size:24px;">Start</button>
-      <button @click="stop()" style="margin: 6px 10px;font-size:24px;">Stop</button>
+      <button @click="start()" style="margin: 6px 10px;font-size:14px;">Start</button>
+      <button @click="stop()" style="margin: 6px 10px;font-size:14px;">Stop</button>
     </div>
     <div style="text-align: center;margin:10% 0;">
       <p id="prefecture" style="font-size:32px;"></p>
